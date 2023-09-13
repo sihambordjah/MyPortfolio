@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon site web portfolio personnel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="bx bx-code-alt"></i>
+        <p>Siham BORDJAH</p>
+      </a>
+      <nav class="navbar">
+        <a href="#bienvenue" class="active nav-link">Bienvenue</a>
+        <a href="#profil" class="nav-link">Profil</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projets" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+       
+      </nav>
+       <div class="hamburger">
+          <span class="bar-hamburger"></span>
+          <span class="bar-hamburger"></span>
+          <span class="bar-hamburger"></span>
+        </div>
+    </header>
+    <!--section bienvenue-->
+    <section class="bienvenue" id="bienvenue">
+      <div class="box-bienvenue">
+        <div class="bienvevue-content">
+          <h1>Siham Bordjah</h1>
+          <div class="text-animate">
+            <h3>Développeuse Web</h3>
+          </div>
+          <div class="btn-box">
+            <a href="#" class="btn">Contactez-moi</a>
+          </div>
+          <div class="bienvenue-reseausociau">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+        </div>
+
+       
+      </div>
+    </section>
+    <!---------------------section profile--------------------->
+    <section class="profil" id="profil">
+      <h2 class="heading">A PROPOS DE MOI</h2>
+      <div class="profil-content">
+        <img src="images/home.jpg" alt="photo-moi" />
+        <p>
+          Hello ! Je m'appelle Siham Bordjah, j'ai 34 ans et je suis
+          Développeuse Web créative, autonome et passionnée avec de solides
+          expériences dans la création de sites web et d'applications
+          e-commerce. Titulaire d'un master informatique option réseaux et
+          systèmes distribués et aussi du titre professionnel de développeur web
+          chez OpenClassrooms, 1ère plateforme européenne de formation en ligne,
+          qui m'a permis d'apprendre les différents languages du web et leur
+          utilisation à travers différents cas pratiques.
+          <a href="images/cv.pdf" target="_blank" class="lien-cv animat-link"
+            >Consulter mon CV</a
+          >.
+        </p>
+      </div>
+    </section>
+    <!--section competences-->
+    <section class="competences" id="competences">
+      <div class="competences-para">
+        <h2 class="heading">COMPÉTENCES</h2>
+        <p>
+          Elles sont en constantes améliorations car pour moi la joie de ce<br />
+          métier fait que l'on en apprend tous les jours, d'autant plus en
+          étant<br />
+          impliqué, curieuse et passionnée.
+        </p>
+        <hr />
+      </div>
+
+      <!--la bar de progression-->
+      <div class="container">
+        <div class="skill">
+          <div class="name">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React.Js</span>
+            <span>Node.js</span>
+            <span>APIs</span>
+            <span>NoSQL</span>
+            <span>Sql</span>
+            <span>MySQL</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!--*********************************-->
+    </section>
+
+    <!--------------------section portfolio--------------------------->
+    <section class="projets" id="projets">
+      <h2 class="heading">PROJETS RÉALISÉS</h2>
+      <div class="projets-content">
+        <div class="card">
+          <div class="left">
+            <h1>Booki</h1>
+            <p>
+              Créer un prototype de site en intégrant la maquette conçue par le
+              designer UI, en HTML et CSS. Le site doit bien sûr être
+              responsive.
+            </p>
+
+            <div class="btn-box btn-discover">
+              <a
+                href="https://sihambordjah.github.io/Booki/"
+                target="_blank"
+                class="btn btn-color btn-position"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture2.PNG" alt="Capture du site Booki" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>Booki</h3>
+                <p>Intégration de maquette en HTML et CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <h1>Ohmyfood</h1>
+            <p>
+              Intégrer la maquette créée par le designer UI en mobilefirst en
+              respectant les contraintes graphiques et d'animations, sans
+              utiliser de JavaScript. Mise en page libre pour les versions
+              desktop et tablette.
+            </p>
+            <div class="btn-box btn-discover">
+              <a
+                href="https://sihambordjah.github.io/sihamohmyfood/"
+                target="_blank"
+                class="btn btn-color btn-position"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture.PNG" alt="Capture du site OhMyFood" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>OhMyFood</h3>
+                <p class="project_item_figcaption_subtitle">
+                  Intégration de maquette en HTML et animation avec SASS
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <h1>La Panthere</h1>
+            <p>
+              Analyser l'état actuel de SEO du site fourni et améliorer les
+              points les plus importants concernant notamment la vitesse, la
+              taille et l'accessibilité du site. Puis créer un rapport
+              d'optimisations pour comparer les résultats avant/après fournis
+              par différents analyseurs de qualité et performance web.
+            </p>
+            <div class="btn-box btn-discover">
+              <a
+                href="https://sihambordjah.github.io/p4-test-analyser/"
+                target="_blank"
+                class="btn btn-color btn-position"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture3.PNG" alt="Capture du site La Pantere" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>La panthere</h3>
+                <p class="project_item_figcaption_subtitle">
+                  Refonte de site web et SEO
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <h1>Kanap</h1>
+            <p>
+              Unifier les travaux déjà réalisés par les développeurs front-end
+              et back-end, en intégrant dynamiquement les éléments de l'API dans
+              les différentes pages web avec JavaScript. L'utilisateur doit
+              pouvoir visualiser l'ensemble des produits disponibles, ajouter un
+              ou plusieurs article dans un panier, modifier ou supprimer son
+              panier et enfin, passer commande.
+            </p>
+            <div class="btn-box btn-discover">
+              <a
+                href="https://p5-kanap-front.vercel.app/"
+                target="_blank"
+                class="btn btn-color"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture10.PNG" alt="Capture du site La kanap" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>Kanap</h3>
+                <p>Intégration d'une API en JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <h1>Piiquante</h1>
+            <p>
+              Construire une API sécurisée avec ses models, controllers et
+              routes. Les utilisateurs de l'application doivent pouvoir créer de
+              nouvelles sauces, modifier ou supprimer leur sauce, ainsi que
+              liker ou disliker toutes les sauces créées.
+            </p>
+            <div class="btn-box btn-discover">
+              <a
+                href="https://p6-piquante-frontend.vercel.app/login"
+                target="_blank"
+                class="btn btn-color btn-position"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture4.PNG" alt="Capture du site Piquante" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>Hot Takes</h3>
+                <p>
+                  Création d'un serveur et d'une API avec Node, Express et
+                  MongoDB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <h1>Kasa</h1>
+            <p>
+              Développer l'ensemble de l'application et ses composants avec
+              React, en suivant les maquettes Figma fournies. Des composants
+              réutilisables doivent être créés pour les onglets ouvrants et le
+              carrousel de photo.
+            </p>
+            <div class="btn-box btn-discover">
+              <a
+                href="sihambordjah.github.io/kasa/"
+                target="_blank"
+                class="btn btn-color"
+                >Découvrir ce site</a
+              >
+            </div>
+          </div>
+          <div class="right img-survol">
+            <img src="./images/Capture5.PNG" alt="Capture du site La Kasa" />
+            <div class="fadedbox">
+              <div class="title text">
+                <h3>Kasa</h3>
+                <p class="project_item_figcaption_subtitle">
+                  Création d'une application web de location immobilière avec
+                  React
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end section protfolio-->
+
+    <!--section contact-->
+    <section class="contact" id="contact">
+      <div class="overlay">
+        <div class="para">
+          <h2 class="heading">CONTACT</h2>
+          <p>
+            Si vous avez des questions ou que vous voulez en savoir plus,
+            n'hésitez pas à me contacter et à télécharger mon CV ci-dessous.
+          </p>
+          <hr />
+        
+        </div>
+        <div class="contact-box">
+          <div class="contact-left">
+            <a href="./images/cv.pdf" class="animat-link" target="_blank">
+              Télécharger mon CV
+            </a>
+          </div>
+          <div class="contact-right"> 
+            <ul>
+            <li>
+              <i class='arrow-icon bx bxs-right-arrow'></i> E-mail :
+              <a href="siham:sihamsissa1903@gmail.com" class="email-link">sihamsissa1903@gmail.com</a>
+            </li>
+            <li><i class='arrow-icon bx bxs-right-arrow'></i> Téléphone : +33(7) 53 9 52 75</li>           
+            </ul>
+          </div>          
+         </div>  
+    </section>
+    <!--end section contact-->
+
+    <!--section footer-->
+    <section class="footer" id="footer">
+      <div class="footer-content">
+        <ul class="social-links">
+          <li>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </li>
+        </ul>
+        <p class="copyright">© 2023 Siham BORDJAH, Tous droits réservés.</p>
+      </div>
+    </section>
+    <!--end section footer-->
+    <script src="script.js"></script>
+  </body>
+</html>
