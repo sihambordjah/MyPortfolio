@@ -973,10 +973,13 @@ hr {
     font-size: 1.05rem;
   }
   .projets .projets-content .right img {
+     height: 250px;
+  width: 300px;
     margin-bottom: 20px;
     margin-left: 2px;
     border-radius: 25px 0 25px 0;
   }
+ 
   /*contact*/
   #contact {
     padding: 0;
