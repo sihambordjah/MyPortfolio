@@ -17,6 +17,9 @@ body {
   background: #081b29;
   color: #ededed;
 }
+img {
+  width: 100%;
+}
 section {
   min-height: 100vh;
   padding: 9rem 9% 2rem;
@@ -70,7 +73,7 @@ section {
 
 /*-------style la bienvenue*/
 .bienvenue {
-  background: url("../images/bienve.jpg") no-repeat;
+  background: url("../images/imgbienvenue.jpg") no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -228,18 +231,19 @@ section {
   border-radius: 50%;
 }
 .profil-content p {
-  font-size: 2.5rem;
-  padding-left: 7rem;
-  width: 60%;
+  font-size: 2rem;
+  padding-left: 2.5rem;
+  width: 70%;
 }
 .profil-content p .lien-cv {
+  font-size: 2rem;
   color: #00abf0;
   font-weight: bold;
 }
 /*---------style Competences-----------*/
 .competences {
   /*padding: 7%;*/
-  background: url(../images/presentation.jpg) no-repeat;
+  background: url(../images/imgcompetence.jpg) no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -384,26 +388,29 @@ hr {
   border-radius: 25px;
 }
 .projets .projets-content .card {
-  width: 85%;
+  width: 90%;
+  height: 300px;
   display: flex;
   /*flex-wrap: wrap;*/
   justify-content: center;
   margin-bottom: 20px;
   background-color: #081b29;
-  padding: 1.4% 0;
+  /*padding: 1.4% 0;*/
   border-radius: 25px;
 }
 .projets .projets-content .card .left {
   position: relative;
-  flex: 0 0 40%;
+  flex: 0 0 50%;
   padding: 5px;
   color: #ededed;
   margin-right: 17px;
+  margin-left: 17px;
+  margin-top: 17px;
 }
 
 .projets .projets-content .card .left .btn-discover {
   position: absolute;
-  top: 230px;
+  top: 200px;
   display: block;
   padding-left: 0;
   margin-top: 2%;
@@ -442,14 +449,12 @@ hr {
   font-size: 1.4rem;
 }
 .projets .projets-content .card.right {
-  flex: 0 0 60%;
+  flex: 0 0 50%;
 }
 .projets .projets-content .right img {
   object-fit: cover;
-  height: 300px;
-  width: 460px;
-  /*margin-top: 10px;*/
-  margin-left: 5px;
+  width: 100%;
+
   border-radius: 0 25px 25px 0;
   position: relative;
   transition: transform 0.5s ease;
@@ -479,7 +484,7 @@ hr {
   opacity: 0;
   width: 100%;
   height: 100%;
-  padding: 110px 20px;
+  padding: 50px 20px;
 }
 .img-survol:hover .fadedbox {
   opacity: 0.8;
@@ -585,7 +590,6 @@ hr {
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -596,18 +600,15 @@ hr {
   background: #00abf0;
   display: block;
   position: absolute;
-  bottom: -3px;
+  bottom: -15px;
   left: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   transition: all 0.3s ease-in-out;
 }
 .animat-link:hover {
   background-position: 0;
   text-decoration: none;
-}
-.animat-link:hover::before {
-  width: 100%;
 }
 .arrow-icon {
   color: #00abf0;
@@ -735,7 +736,7 @@ hr {
     left: 120px;
   }
   .competences-para {
-  width: 80%;
+    width: 80%;
   }
   .competences-para p {
     font-size: 16px;
@@ -758,7 +759,6 @@ hr {
   }
 }
 /*--------------------------*/
-
 
 @media (max-width: 768px) {
   .hamburger {
@@ -846,11 +846,10 @@ hr {
   /*projets*/
   .projets .projets-content .card {
     flex-direction: column-reverse;
-    padding: 2%;
-    height: 600px;
+    height: 570px;
   }
   .projets .projets-content .card .left .btn-discover {
-    top: 150px;
+    top: 160px;
   }
   .projets .projets-content .card .left h1 {
     font-size: 2.5rem;
@@ -861,8 +860,8 @@ hr {
   }
 
   .projets .projets-content .right img {
-    margin-bottom: 20px;
-    margin-left: 2px;
+    margin-top: 0;
+    margin-bottom: 15px;
     border-radius: 25px 0 25px 0;
   }
 
@@ -914,7 +913,10 @@ hr {
     margin: 2rem 0 2rem 0;
   }
   .profil-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .profil-content p .lien-cv {
+    font-size: 1.2rem;
   }
   /*competences*/
   .competences {
@@ -973,13 +975,11 @@ hr {
     font-size: 1.05rem;
   }
   .projets .projets-content .right img {
-     height: 250px;
-  width: 300px;
     margin-bottom: 20px;
     margin-left: 2px;
-    border-radius: 25px 0 25px 0;
+    border-radius: 25px 25px 0 0;
   }
- 
+
   /*contact*/
   #contact {
     padding: 0;
