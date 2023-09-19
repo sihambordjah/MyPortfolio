@@ -1,4 +1,6 @@
+/*----------------Style Generale---------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,49 @@ section {
   padding: 9rem 9% 2rem;
   width: 100%;
 }
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 4rem 0 4rem 0;
+}
+hr {
+  border: 3px solid #081b29;
+  color: #081b29;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.animat-link {
+  background-image: linear-gradient(to right, #00abf0, #00abf0 50%, #fff 50%);
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-decoration: 3px #00abf0 underline;
+  font-size: 2rem;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.animat-link:before {
+  content: "";
+  background: #00abf0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.animat-link:hover {
+  background-position: 0;
+  text-decoration: none;
+}
+/*------------Nav Bar------------*/
 .header {
   position: fixed;
   top: 0;
@@ -214,11 +259,6 @@ section {
   gap: 2rem;
   background: #081b29;
 }
-.heading {
-  font-size: 4rem;
-  text-align: center;
-  margin: 4rem 0 4rem 0;
-}
 .profil-content {
   display: flex;
   flex-direction: row;
@@ -226,23 +266,19 @@ section {
   align-items: center;
 }
 .profil-content img {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   border-radius: 50%;
 }
 .profil-content p {
   font-size: 2rem;
   padding-left: 2.5rem;
   width: 70%;
+  line-height: 150%;
 }
-.profil-content p .lien-cv {
-  font-size: 2rem;
-  color: #00abf0;
-  font-weight: bold;
-}
+
 /*---------style Competences-----------*/
 .competences {
-  /*padding: 7%;*/
   background: url(../images/imgcompetence.jpg) no-repeat;
   background-size: cover;
   display: flex;
@@ -262,13 +298,7 @@ section {
   text-align: center;
   margin: 0 0 3rem 0;
 }
-hr {
-  border: 3px solid #081b29;
-  color: #081b29;
-  width: 20%;
-  text-align: center;
-  margin-bottom: 7%;
-}
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -302,7 +332,6 @@ hr {
   font-size: 2.3rem;
   z-index: 1;
 }
-
 .skill .name {
   display: flex;
   flex-direction: column;
@@ -369,10 +398,9 @@ hr {
 .bar:nth-child(9) .progress {
   width: 30%;
 }
-
 /*end css competences*/
 
-/*section portfolio*/
+/*---------portfolio-------*/
 .projets {
   display: flex;
   flex-direction: column;
@@ -407,7 +435,6 @@ hr {
   margin-left: 17px;
   margin-top: 17px;
 }
-
 .projets .projets-content .card .left .btn-discover {
   position: absolute;
   top: 200px;
@@ -415,7 +442,6 @@ hr {
   padding-left: 0;
   margin-top: 2%;
 }
-
 .btn-discover .btn-color {
   background: #00abf0;
   border: 2px solid #00abf0;
@@ -437,9 +463,6 @@ hr {
 .btn-discover .btn-color::before {
   background: #081b29;
 }
-
-/*--------------------------------*/
-
 .projets .projets-content .card .left h1 {
   font-size: 2.5rem;
   color: #79d0f2;
@@ -454,19 +477,17 @@ hr {
 .projets .projets-content .right img {
   object-fit: cover;
   width: 100%;
-
   border-radius: 0 25px 25px 0;
   position: relative;
   transition: transform 0.5s ease;
   background: #00abf0;
 }
-
 .projets .projets-content .right:hover img {
   opacity: 0.5;
   transform: scale(1.1);
 }
 
-/**-----------------animation text-----------------------------*/
+/**--animation text---*/
 .img-survol {
   cursor: pointer;
   position: relative;
@@ -516,8 +537,9 @@ hr {
   opacity: 1;
   transform: translateY(0px);
 }
-/*---------------------------------------------------------------------------------------------*/
-/*section Contact*/
+/*---------End style portfolio-------*/
+
+/*---------Style Contact---------*/
 #contact {
   background: url("/images/contact.jpg") no-repeat;
   padding: 7%;
@@ -558,9 +580,8 @@ hr {
 .contact-box {
   width: 700px;
   height: 170px;
-  
 }
-.contact-info{
+.contact-info {
   width: 100%;
   height: 100%;
   display: flex;
@@ -571,7 +592,7 @@ hr {
   border-radius: 25px;
   box-shadow: inset 2px 2px 2px #d9dade, inset -2px -2px 2px #6dc0e1;
 }
-.contact-box  ul {
+.contact-box ul {
   list-style: none;
   font-size: 2rem;
 }
@@ -579,35 +600,7 @@ hr {
   color: #00abf0;
   text-decoration: underline;
 }
-.animat-link {
-  background-image: linear-gradient(to right, #00abf0, #00abf0 50%, #fff 50%);
-  font-weight: bold;
-  line-height: 3;
-  text-decoration: 3px #00abf0 underline;
-  font-size: 2rem;
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.animat-link:before {
-  content: "";
-  background: #00abf0;
-  display: block;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  transition: all 0.3s ease-in-out;
-}
-.animat-link:hover {
-  background-position: 0;
-  text-decoration: none;
-}
+
 .arrow-icon {
   color: #00abf0;
 }
@@ -989,12 +982,12 @@ hr {
     font-size: 1.2rem;
   }
 
-  .contact-box  ul {
+  .contact-box ul {
     font-size: 1.2rem;
   }
- .animat-link { 
-  font-size: 1.2rem;
- }
+  .animat-link {
+    font-size: 1.2rem;
+  }
   /*footer*/
   .copyright {
     font-size: 1.3rem;
