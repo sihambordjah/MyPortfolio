@@ -773,12 +773,12 @@ hr {
     flex-direction: column;
     background-color: #081b29;
     width: 100%;
-    height: 667px;
+    height: 100%;
     text-align: center;
     transition: 0.3s;
   }
   .nav-link {
-    margin: 14px 0;
+    margin: 16px 0;
   }
   .navbar.active {
     left: 0;
@@ -852,9 +852,7 @@ hr {
   }
 
   .projets .projets-content .right img {
-    margin-top: 0;
-    margin-bottom: 15px;
-    border-radius: 25px 0 25px 0;
+    border-radius: 25px 25px 0 0;
   }
 
   /*contact*/
