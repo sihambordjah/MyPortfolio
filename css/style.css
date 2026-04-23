@@ -9,21 +9,25 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 html {
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+   font-size: 62.5%; /* = 10px mais plus standard */ 
 }
 body {
   background: #081b29;
   color: #ededed;
+   overflow-x: hidden;
+   font-family: "Poppins", sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
 }
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 section {
-  min-height: 100vh;
   padding: 9rem 9% 2rem;
   width: 100%;
 }
